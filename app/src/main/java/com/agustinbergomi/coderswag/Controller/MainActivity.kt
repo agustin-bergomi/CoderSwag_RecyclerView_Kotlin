@@ -20,6 +20,8 @@ class MainActivity : AppCompatActivity() {
 
         cate = findViewById<ListView>(R.id.categoryListView)
 
+        //a la variable adapter le asigno un Constructor de tipo ArrayAdapter que toma como parametros
+        //creo un objeto de tipo ArrayAdapter?
         adapter = ArrayAdapter(this, android.R.layout.simple_list_item_1, DataService.categories)
 
         cate.adapter = adapter
